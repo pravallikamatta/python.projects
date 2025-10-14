@@ -4,7 +4,7 @@ def find_winner(bidder_details):
         winner="" 
         for bidder in bidder_details:
            bidding_price=bidder_details[bidder]
-           if bidding_price>bidder_details:
+           if bidding_price>highest_bid:
                   highest_bid=bidding_price
                   winner=bidder
         print(f"here is the list of all the bidders:{bidder_details}")  
@@ -20,4 +20,5 @@ while not endofbid:
                 endofbid=True
                 find_winner(bidder_data)
         elif morebidders=="yes":
-                os.sysyem('cls')        
+                os.system('cls')
+     
